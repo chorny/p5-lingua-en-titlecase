@@ -1,4 +1,4 @@
-use inc::Module::Install;
+use inc::Module::Install 0.92; #0.92 has support for better ppd/OS package generation
 
 name            "Lingua-EN-Titlecase";
 all_from        "lib/Lingua/EN/Titlecase.pm";
@@ -16,6 +16,7 @@ build_requires  "Test::More" => 0;
 system("pod2text lib/Lingua/EN/Titlecase.pm > README");
 
 auto_install;
+repository 'https://github.com/pangyre/p5-lingua-en-titlecase';
 WriteAll;
 
 __END__
