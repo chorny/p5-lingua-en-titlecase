@@ -3,6 +3,7 @@
 ,v$
 \.svn\b
 \.cvs
+\.git
 \bMakefile$
 \bblib
 \bMakeMaker-\d
@@ -24,3 +25,4 @@
 t/sqlite
 t/lib
 t/var
+MYMETA\.
